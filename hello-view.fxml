@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #B8D576;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.countryflaggame.HelloController">
+   <children>
+      <VBox alignment="CENTER" layoutX="22.0" layoutY="21.0" prefHeight="565.0" prefWidth="357.0" style="-fx-background-color: #FFD95F; -fx-border-color: #D70654; -fx-border-width: 10; -fx-border-radius: 5; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="informationLabel" style="-fx-background-color: FFEFC8; -fx-border-color: B8D576; -fx-border-width: 5; -fx-background-radius: 50; -fx-border-radius: 50;" text="Score: Wins/Total" textFill="#d70654">
+               <font>
+                  <Font name="Marlett" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </Label>
+            <ImageView fx:id="flagImageView" fitHeight="175.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="scoreKeeperLabel" style="-fx-background-color: FFEFC8; -fx-border-color: B8D576; -fx-border-width: 5; -fx-background-radius: 50; -fx-border-radius: 50;" text="Score: Wins/Total" textFill="#d70654">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Marlett" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </Label>
+            <GridPane prefHeight="158.0" prefWidth="357.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="179.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="178.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="optionOneButton" mnemonicParsing="false" onAction="#buttonHandler" style="-fx-border-color: #D70654; -fx-background-color: #FFEFC8; -fx-border-width: 5; -fx-border-radius: 50; -fx-background-radius: 50;" text="Option" textFill="#d70654" wrapText="true">
+                     <padding>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="25.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Marlett" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionTwoButton" mnemonicParsing="false" onAction="#buttonHandler" style="-fx-border-color: #D70654; -fx-background-color: #FFEFC8; -fx-border-width: 5; -fx-border-radius: 50; -fx-background-radius: 50;" text="Option" textFill="#d70654" wrapText="true" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="25.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Marlett" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionFourButton" mnemonicParsing="false" onAction="#buttonHandler" style="-fx-border-color: #D70654; -fx-background-color: #FFEFC8; -fx-border-width: 5; -fx-border-radius: 50; -fx-background-radius: 50;" text="Option" textFill="#d70654" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </padding>
+                     <font>
+                        <Font name="Marlett" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="optionThreeButton" mnemonicParsing="false" onAction="#buttonHandler" style="-fx-border-color: #D70654; -fx-background-color: #FFEFC8; -fx-border-width: 5; -fx-border-radius: 50; -fx-background-radius: 50;" text="Option" textFill="#d70654" wrapText="true" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </padding>
+                     <font>
+                        <Font name="Marlett" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
